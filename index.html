@@ -1,0 +1,1425 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0ea5e9" />
+
+  <!-- ===== SEO BÁSICO ===== -->
+  <title>Masaje y Bienestar | Ramón Broch — Masajista Deportivo en Castellón</title>
+  <meta
+    name="description"
+    content="Masaje y Bienestar (Ramón Broch). Masaje deportivo, descontracturante y relajante en Castellón. Atención personalizada para recuperación, movilidad y bienestar. Reserva por WhatsApp: +34 617 259 689."
+  />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Masaje y Bienestar | Ramón Broch — Masajista Deportivo" />
+  <meta property="og:description" content="Masaje deportivo, descontracturante y relajante en Castellón. Reserva por WhatsApp." />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:url" content="https://tudominio.com/" />
+  <!-- Cambia por un archivo real si quieres que al compartir salga bonito -->
+  <meta property="og:image" content="https://tudominio.com/assets/og-image.jpg" />
+
+  <!-- ===== Schema.org LocalBusiness ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Masaje y Bienestar, Ramón Broch",
+    "image": "https://tudominio.com/assets/og-image.jpg",
+    "description": "Masajista deportivo y recuperador funcional en Castellón. Masaje deportivo, descontracturante y relajante con atención personalizada.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Calle Doctor Roux 6, Entresuelo",
+      "addressLocality": "Castellón de la Plana",
+      "addressRegion": "Castellón",
+      "addressCountry": "ES"
+    },
+    "telephone": "+34 617 259 689",
+    "email": "rbrochmasajista@hotmail.com",
+    "priceRange": "€",
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "09:30", "closes": "14:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "09:30", "closes": "19:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "09:30", "closes": "15:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "09:30", "closes": "16:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "09:30", "closes": "18:00" }
+    ]
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg: #ffffff;
+      --ink: #0b1220;
+      --muted: rgba(11,18,32,.7);
+      --line: rgba(11,18,32,.12);
+      --card: rgba(14,165,233,.06);
+      --accent: #0ea5e9; /* azul claro */
+      --accent-ink: #062a3a;
+      --shadow: 0 14px 35px rgba(2, 6, 23, .12);
+      --radius: 18px;
+      --max: 1120px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body{
+      margin:0;
+      font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";
+      color: var(--ink);
+      background: radial-gradient(1100px 600px at 10% -10%, rgba(14,165,233,.16), transparent 55%),
+                  radial-gradient(900px 500px at 95% 0%, rgba(14,165,233,.10), transparent 55%),
+                  var(--bg);
+      line-height: 1.45;
+    }
+
+    a { color: inherit; }
+    img { max-width: 100%; display:block; }
+
+    /* Accesibilidad */
+    .skip-link{
+      position: absolute;
+      left: -999px;
+      top: 10px;
+      background: var(--ink);
+      color: #fff;
+      padding: 10px 12px;
+      border-radius: 10px;
+      z-index: 9999;
+    }
+    .skip-link:focus { left: 10px; }
+
+    /* Layout */
+    .container { width: min(var(--max), calc(100% - 40px)); margin: 0 auto; }
+    section { padding: 72px 0; }
+    .grid { display: grid; gap: 18px; }
+
+    /* Header */
+    header{
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,.78);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav{
+      display:flex;
+      align-items:center;
+      justify-content: space-between;
+      padding: 14px 0;
+      gap: 14px;
+    }
+    .brand{
+      display:flex; align-items:center; gap: 10px; text-decoration:none;
+      min-width: 240px;
+    }
+    .logo{
+      width: 42px; height: 42px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, rgba(14,165,233,.18), rgba(14,165,233,.02));
+      border: 1px solid rgba(14,165,233,.35);
+      display:grid; place-items:center;
+      box-shadow: 0 10px 22px rgba(14,165,233,.16);
+      overflow: hidden;
+      flex: 0 0 auto;
+    }
+    .logo img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1.08);
+    }
+    .brand .title{ font-weight: 750; letter-spacing: .2px; }
+    .brand .subtitle{ font-size: 12.5px; color: var(--muted); margin-top: 1px; }
+
+    nav ul{
+      list-style:none; margin:0; padding:0;
+      display:flex; align-items:center; gap: 14px;
+    }
+    nav a{
+      text-decoration:none;
+      color: rgba(11,18,32,.86);
+      font-weight: 600;
+      font-size: 14px;
+      padding: 10px 10px;
+      border-radius: 12px;
+    }
+    nav a:hover { background: rgba(14,165,233,.08); }
+    .nav-cta{
+      display:flex; align-items:center; gap: 10px;
+    }
+
+    /* Mobile menu */
+    .menu-btn{
+      display:none;
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: 12px;
+      padding: 10px 12px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    /* Buttons */
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      gap:10px;
+      padding: 12px 14px;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      text-decoration:none;
+      font-weight: 750;
+      font-size: 14.5px;
+      cursor: pointer;
+      transition: transform .12s ease, box-shadow .12s ease, background .12s ease, border-color .12s ease;
+      background: #fff;
+    }
+    .btn:hover{ transform: translateY(-1px); box-shadow: 0 14px 24px rgba(2,6,23,.10); }
+    .btn.primary{
+      background: linear-gradient(135deg, var(--accent), #38bdf8);
+      color: #fff;
+      border-color: rgba(14,165,233,.45);
+    }
+    .btn.primary:hover{ box-shadow: 0 18px 30px rgba(14,165,233,.22); }
+    .btn.ghost{
+      background: rgba(14,165,233,.08);
+      border-color: rgba(14,165,233,.22);
+      color: var(--accent-ink);
+    }
+    .btn.small{ padding: 10px 12px; font-size: 14px; border-radius: 12px; }
+
+    /* Hero */
+    .hero{
+      padding: 64px 0 40px;
+    }
+    .hero-wrap{
+      display:grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+    .pill{
+      display:inline-flex;
+      gap: 10px;
+      align-items:center;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(14,165,233,.09);
+      border: 1px solid rgba(14,165,233,.22);
+      color: var(--accent-ink);
+      font-weight: 700;
+      width: fit-content;
+      font-size: 13px;
+    }
+    h1{
+      font-size: clamp(30px, 4vw, 44px);
+      line-height: 1.06;
+      margin: 14px 0 12px;
+      letter-spacing: -0.6px;
+    }
+    .lead{ color: var(--muted); font-size: 16.5px; margin: 0 0 18px; max-width: 60ch; }
+    .hero-actions{ display:flex; flex-wrap:wrap; gap: 10px; margin: 18px 0 14px; }
+    .micro{ color: var(--muted); font-size: 13.5px; margin-top: 8px; }
+
+    .hero-card{
+      border-radius: var(--radius);
+      border: 1px solid rgba(14,165,233,.22);
+      background: rgba(255,255,255,.78);
+      box-shadow: var(--shadow);
+      padding: 18px;
+      display:flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .hero-card .top{
+      display:flex; align-items:flex-start; justify-content: space-between; gap: 10px;
+    }
+    .stat{
+      padding: 12px;
+      border-radius: 16px;
+      background: var(--card);
+      border: 1px solid rgba(14,165,233,.16);
+    }
+    .stat strong{ display:block; font-size: 18px; }
+    .stat span{ color: var(--muted); font-size: 13px; }
+
+    .quick-book{
+      display:grid;
+      gap: 10px;
+      grid-template-columns: 1fr;
+    }
+
+    /* Section headings */
+    .section-head{
+      display:flex;
+      justify-content: space-between;
+      align-items:flex-end;
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+    h2{
+      margin: 0;
+      font-size: clamp(22px, 2.6vw, 30px);
+      letter-spacing: -0.3px;
+    }
+    .section-sub{ color: var(--muted); margin: 6px 0 0; max-width: 70ch; }
+
+    /* Cards */
+    .cards{ grid-template-columns: repeat(12, 1fr); }
+    .card{
+      grid-column: span 4;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.72);
+      box-shadow: 0 10px 26px rgba(2,6,23,.06);
+      padding: 18px;
+      min-height: 154px;
+    }
+    .card .icon{
+      width: 42px; height: 42px; border-radius: 14px;
+      background: rgba(14,165,233,.10);
+      border: 1px solid rgba(14,165,233,.20);
+      display:grid; place-items:center;
+      margin-bottom: 10px;
+    }
+    .card h3{ margin: 0 0 6px; font-size: 16.5px; }
+    .card p{ margin: 0; color: var(--muted); font-size: 14.5px; }
+
+    /* Steps */
+    .steps{ grid-template-columns: repeat(12, 1fr); }
+    .step{
+      grid-column: span 4;
+      border-radius: var(--radius);
+      border: 1px solid rgba(14,165,233,.20);
+      background: linear-gradient(180deg, rgba(14,165,233,.08), rgba(255,255,255,.72));
+      padding: 18px;
+    }
+    .step .num{
+      width: 34px; height: 34px; border-radius: 12px;
+      display:grid; place-items:center;
+      background: rgba(14,165,233,.16);
+      border: 1px solid rgba(14,165,233,.26);
+      font-weight: 850;
+      color: var(--accent-ink);
+      margin-bottom: 10px;
+    }
+    .step h3{ margin: 0 0 6px; }
+    .step p{ margin: 0; color: var(--muted); }
+
+    /* Pricing */
+    .pricing{
+      border-radius: var(--radius);
+      border: 1px solid rgba(14,165,233,.22);
+      background: rgba(255,255,255,.72);
+      padding: 18px;
+      box-shadow: 0 14px 30px rgba(2,6,23,.08);
+      overflow:hidden;
+    }
+    table{
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14.5px;
+    }
+    th, td{
+      padding: 14px 12px;
+      border-bottom: 1px solid var(--line);
+      text-align:left;
+      vertical-align: top;
+    }
+    th{
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: rgba(11,18,32,.7);
+    }
+    .tag{
+      display:inline-flex;
+      align-items:center;
+      gap: 8px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(14,165,233,.22);
+      background: rgba(14,165,233,.08);
+      color: var(--accent-ink);
+      font-weight: 750;
+      font-size: 13px;
+    }
+    .note{ margin-top: 10px; color: var(--muted); font-size: 13.5px; }
+
+    /* About / Contact layout */
+    .two{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+    .panel{
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.70);
+      padding: 18px;
+      box-shadow: 0 12px 26px rgba(2,6,23,.06);
+    }
+
+    .avatar{
+      width: 84px; height: 84px;
+      border-radius: 24px;
+      background: linear-gradient(135deg, rgba(14,165,233,.18), rgba(255,255,255,.70));
+      border: 1px solid rgba(14,165,233,.26);
+      display:grid; place-items:center;
+      margin-bottom: 12px;
+      overflow:hidden;
+    }
+    .avatar img{
+      width:100%; height:100%;
+      object-fit: cover;
+      transform: scale(1.05);
+    }
+
+    /* Reviews */
+    .reviews{ grid-template-columns: repeat(12, 1fr); }
+    .review{
+      grid-column: span 4;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.72);
+      padding: 18px;
+      box-shadow: 0 10px 24px rgba(2,6,23,.06);
+    }
+    .stars{ letter-spacing: 1px; font-size: 15px; }
+    .review p{ margin: 10px 0 0; color: var(--muted); }
+    .who{ margin-top: 12px; font-weight: 800; }
+
+    /* Gallery */
+    .gallery{ grid-template-columns: repeat(12, 1fr); }
+    .photo{
+      grid-column: span 6;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.72);
+      overflow: hidden;
+      box-shadow: 0 10px 24px rgba(2,6,23,.06);
+      cursor: zoom-in;
+    }
+    .photo .img-wrap{
+      aspect-ratio: 16 / 11;
+      background: rgba(14,165,233,.06);
+      overflow:hidden;
+    }
+    .photo img{
+      width:100%;
+      height:100%;
+      object-fit: cover;
+      transition: transform .35s ease;
+    }
+    .photo:hover img{ transform: scale(1.03); }
+    .photo .cap{
+      padding: 12px 14px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .photo strong{ color: var(--ink); }
+
+    /* Lightbox */
+    .lightbox{
+      position: fixed;
+      inset: 0;
+      background: rgba(2,6,23,.72);
+      display:none;
+      z-index: 2000;
+      padding: 18px;
+    }
+    .lightbox.in{ display:grid; place-items:center; }
+    .lightbox .inner{
+      width: min(980px, 100%);
+      background: rgba(255,255,255,.96);
+      border-radius: 18px;
+      overflow:hidden;
+      border: 1px solid rgba(255,255,255,.18);
+      box-shadow: 0 30px 80px rgba(0,0,0,.35);
+    }
+    .lightbox img{
+      width:100%;
+      height:auto;
+      display:block;
+    }
+    .lightbox .bar{
+      display:flex;
+      justify-content: space-between;
+      align-items:center;
+      gap: 10px;
+      padding: 10px 12px;
+      color: rgba(11,18,32,.8);
+      border-top: 1px solid rgba(11,18,32,.10);
+    }
+    .xbtn{
+      border: 1px solid rgba(11,18,32,.14);
+      background: #fff;
+      border-radius: 12px;
+      padding: 8px 10px;
+      cursor:pointer;
+      font-weight: 800;
+    }
+
+    /* FAQ (details) */
+    details{
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.72);
+      padding: 14px 14px;
+    }
+    details summary{
+      cursor: pointer;
+      font-weight: 800;
+      list-style: none;
+      outline: none;
+    }
+    details summary::-webkit-details-marker{ display:none; }
+    details p{ margin: 10px 0 0; color: var(--muted); }
+
+    /* Forms */
+    form{ display:grid; gap: 12px; margin-top: 10px; }
+    label{ font-weight: 750; font-size: 13.5px; }
+    input, textarea, select{
+      width:100%;
+      padding: 12px 12px;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      background: #fff;
+      font: inherit;
+      outline: none;
+    }
+    input:focus, textarea:focus, select:focus{
+      border-color: rgba(14,165,233,.55);
+      box-shadow: 0 0 0 4px rgba(14,165,233,.14);
+    }
+    textarea{ min-height: 110px; resize: vertical; }
+
+    .form-row{ display:grid; gap: 12px; grid-template-columns: 1fr 1fr; }
+    .help{ color: var(--muted); font-size: 13px; margin-top: -4px; }
+
+    .alert{
+      border-radius: 16px;
+      border: 1px solid rgba(14,165,233,.22);
+      background: rgba(14,165,233,.08);
+      padding: 12px 12px;
+      color: var(--accent-ink);
+      font-weight: 700;
+      display:none;
+    }
+    .error{
+      border-color: rgba(239,68,68,.55) !important;
+      box-shadow: 0 0 0 4px rgba(239,68,68,.14) !important;
+    }
+    .errtxt{ color: rgba(239,68,68,.95); font-size: 13px; margin-top: -8px; display:none; }
+
+    /* Footer */
+    footer{
+      padding: 26px 0 40px;
+      border-top: 1px solid var(--line);
+      background: rgba(255,255,255,.55);
+    }
+    .foot{
+      display:flex;
+      gap: 16px;
+      align-items:flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .foot small{ color: var(--muted); }
+
+    /* WhatsApp floating button */
+    .wa-fab{
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 1200;
+      width: 54px;
+      height: 54px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #22c55e, #16a34a);
+      box-shadow: 0 18px 36px rgba(22,163,74,.25);
+      display:grid;
+      place-items:center;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .wa-fab:focus{
+      outline: none;
+      box-shadow: 0 0 0 4px rgba(34,197,94,.22), 0 18px 36px rgba(22,163,74,.25);
+    }
+    .wa-fab svg{ width: 24px; height: 24px; fill: #fff; }
+
+    /* Reveal animations */
+    .reveal{ opacity: 0; transform: translateY(10px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal.in{ opacity: 1; transform: translateY(0); }
+
+    /* Responsive */
+    @media (max-width: 980px){
+      .hero-wrap{ grid-template-columns: 1fr; }
+      .cards .card, .steps .step, .reviews .review{ grid-column: span 6; }
+      .gallery .photo{ grid-column: span 12; }
+      .two{ grid-template-columns: 1fr; }
+      nav ul{ display:none; }
+      .menu-btn{ display:inline-flex; }
+      .nav-cta{ display:none; }
+      .mobile{
+        display:none;
+        border-top: 1px solid var(--line);
+        padding: 8px 0 14px;
+      }
+      .mobile a{ display:block; padding: 10px 10px; border-radius: 12px; text-decoration:none; font-weight: 750; }
+      .mobile a:hover{ background: rgba(14,165,233,.08); }
+      .mobile .row{ display:flex; gap:10px; flex-wrap: wrap; padding: 10px 0 0; }
+    }
+    @media (max-width: 640px){
+      section{ padding: 58px 0; }
+      .cards .card, .steps .step, .reviews .review{ grid-column: span 12; }
+      .form-row{ grid-template-columns: 1fr; }
+    }
+
+    /* Reduce motion */
+    @media (prefers-reduced-motion: reduce){
+      html { scroll-behavior: auto; }
+      .reveal{ transition: none; }
+      .btn{ transition: none; }
+      .photo img{ transition:none; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="#inicio" aria-label="Ir al inicio">
+          <div class="logo" aria-hidden="true">
+            <img id="logoImg" src="assets/logo.jpg" alt="Logo de Masaje y Bienestar" loading="eager" />
+          </div>
+          <div>
+            <div class="title">Masaje y Bienestar</div>
+            <div class="subtitle">Ramón Broch · Masajista Deportivo</div>
+          </div>
+        </a>
+
+        <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu">
+          Menú
+        </button>
+
+        <nav aria-label="Navegación principal">
+          <ul>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#precios">Precios</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#opiniones">Opiniones</a></li>
+            <li><a href="#galeria">Fotos</a></li>
+            <li><a href="#ubicacion">Ubicación</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-cta">
+          <a class="btn small ghost" href="#precios">Ver precios</a>
+          <a class="btn small primary" id="whatsAppTop" href="#">Reservar por WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="mobile" id="mobileMenu" role="region" aria-label="Menú móvil">
+        <a href="#servicios">Servicios</a>
+        <a href="#precios">Precios</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#opiniones">Opiniones</a>
+        <a href="#galeria">Fotos</a>
+        <a href="#ubicacion">Ubicación</a>
+        <a href="#contacto">Contacto</a>
+        <div class="row">
+          <a class="btn ghost" href="#precios">Ver precios</a>
+          <a class="btn primary" id="whatsAppMobile" href="#">Reservar por WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <main id="contenido">
+    <section class="hero" id="inicio">
+      <div class="container">
+        <div class="hero-wrap">
+          <div class="reveal">
+            <div class="pill">
+              <span aria-hidden="true">⚡</span>
+              <span>Castellón · Atención personalizada</span>
+            </div>
+            <h1>Recupera, rinde y vuelve más fuerte.</h1>
+            <p class="lead">
+              Masajista deportivo y recuperador funcional especializado en la <strong>prevención</strong> y el
+              <strong>tratamiento</strong> de molestias musculares y articulares. Servicio profesional para deportistas
+              y para quienes buscan aliviar tensiones del día a día, mejorar el bienestar y optimizar la recuperación.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn primary" id="whatsAppHero" href="#">
+                <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="currentColor" d="M20.52 3.48A11.86 11.86 0 0 0 12.03 0C5.4 0 .04 5.36.04 12c0 2.11.55 4.18 1.6 6.02L0 24l6.16-1.62a11.95 11.95 0 0 0 5.87 1.5h.01c6.63 0 12-5.36 12-12a11.9 11.9 0 0 0-3.52-8.4ZM12.04 21.85h-.01a9.94 9.94 0 0 1-5.07-1.39l-.36-.22-3.65.96.98-3.55-.24-.37a9.93 9.93 0 0 1-1.53-5.29c0-5.5 4.48-9.97 9.99-9.97a9.9 9.9 0 0 1 7.07 2.93 9.91 9.91 0 0 1 2.92 7.05c0 5.5-4.48 9.85-9.1 9.85Zm5.75-7.46c-.31-.16-1.83-.9-2.11-1-.28-.1-.49-.16-.7.16-.2.31-.8 1-.98 1.21-.18.2-.35.23-.66.08-.31-.16-1.29-.48-2.46-1.53-.91-.81-1.52-1.82-1.7-2.12-.18-.31-.02-.47.13-.62.14-.14.31-.35.47-.53.16-.18.2-.31.31-.51.1-.2.05-.39-.02-.55-.08-.16-.7-1.68-.96-2.3-.25-.6-.5-.52-.7-.53h-.6c-.2 0-.55.08-.84.39-.29.31-1.1 1.08-1.1 2.62 0 1.54 1.13 3.03 1.29 3.24.16.2 2.22 3.39 5.38 4.76.75.32 1.33.52 1.78.66.75.24 1.43.2 1.97.12.6-.09 1.83-.75 2.09-1.48.26-.73.26-1.36.18-1.48-.08-.12-.28-.2-.6-.35Z"/>
+                </svg>
+                Reservar por WhatsApp
+              </a>
+              <a class="btn ghost" href="#precios">Ver precios</a>
+            </div>
+
+            <p class="micro">
+              📍 Calle Doctor Roux 6, Entresuelo ·
+              <a href="#contacto" style="font-weight:800; text-decoration:none;">Respuesta rápida en horario laboral</a>
+            </p>
+          </div>
+
+          <aside class="hero-card reveal" aria-label="Reservas rápidas y resumen">
+            <div class="top">
+              <div class="stat">
+                <strong>25€</strong>
+                <span>Sesión 30–40 min</span>
+              </div>
+              <div class="stat">
+                <strong>Enfoque</strong>
+                <span>Recuperación & movilidad</span>
+              </div>
+            </div>
+
+            <div>
+              <div class="tag">Reservas rápidas</div>
+              <div class="quick-book" style="margin-top:10px;">
+                <a class="btn" data-wa="Quiero una sesión de masaje deportivo (30–40 min). ¿Tienes hueco esta semana?">Quiero masaje deportivo</a>
+                <a class="btn" data-wa="Tengo una sobrecarga/tensión. Me gustaría una sesión (30–40 min). ¿Disponibilidad?">Tengo sobrecarga</a>
+                <a class="btn" data-wa="Busco aliviar tensiones y relajarme. ¿Puedo reservar una sesión (30–40 min)?">Quiero relajante</a>
+              </div>
+              <p class="help">*Al pulsar, se abre WhatsApp con el mensaje preparado.</p>
+            </div>
+
+            <div style="border-top:1px solid var(--line); padding-top:14px;">
+              <div style="font-weight:850; margin-bottom:8px;">Trato cercano y respetuoso</div>
+              <div style="color:var(--muted); font-size:14.5px;">
+                Cada sesión se adapta a tu historia corporal, tu actividad y el objetivo del tratamiento.
+                Lenguaje responsable: se trabaja para <strong>ayudar</strong> a reducir molestias y mejorar la recuperación,
+                sin prometer resultados médicos absolutos.
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONFIANZA / VENTAJAS ===== -->
+    <section>
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <h2>Un servicio profesional, claro y personalizado</h2>
+            <p class="section-sub">
+              Pensado tanto para deportistas como para cualquier persona que quiera mejorar su bienestar físico.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid cards">
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path d="M4 12s3-6 8-6 8 6 8 6-3 6-8 6-8-6-8-6Z" stroke="rgba(14,165,233,.9)" stroke-width="1.8"/>
+                <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" stroke="rgba(14,165,233,.9)" stroke-width="1.8"/>
+              </svg>
+            </div>
+            <h3>Escucha y valoración</h3>
+            <p>Se atiende a tu historial corporal, hábitos y objetivo para ajustar la sesión con sentido.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path d="M6 13c2 0 2-2 4-2s2 2 4 2 2-2 4-2" stroke="rgba(14,165,233,.9)" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M6 17c2 0 2-2 4-2s2 2 4 2 2-2 4-2" stroke="rgba(14,165,233,.9)" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M6 9c2 0 2-2 4-2s2 2 4 2 2-2 4-2" stroke="rgba(14,165,233,.9)" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Técnicas adaptadas</h3>
+            <p>Masaje deportivo, descontracturante y relajante, según tu necesidad del día.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path d="M12 21s7-4.6 7-11a7 7 0 1 0-14 0c0 6.4 7 11 7 11Z" stroke="rgba(14,165,233,.9)" stroke-width="1.8"/>
+                <path d="M9 10h6" stroke="rgba(14,165,233,.9)" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M12 7v6" stroke="rgba(14,165,233,.9)" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Prevención & movilidad</h3>
+            <p>Enfoque en mejora progresiva de movilidad, reducción de tensión y prevención de recaídas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICIOS ===== -->
+    <section id="servicios">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <h2>Servicios</h2>
+            <p class="section-sub">
+              Sesiones adaptadas al tipo de actividad (deporte, trabajo, vida diaria) y al objetivo del tratamiento.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid cards">
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true">🏃</div>
+            <h3>Masaje deportivo</h3>
+            <p>Para ayudar a mejorar la recuperación, descargar la musculatura y optimizar sensaciones.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true">💪</div>
+            <h3>Descontracturante</h3>
+            <p>Orientado a aliviar tensiones y sobrecargas habituales (espalda, cuello, piernas).</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true">🧘</div>
+            <h3>Relajante</h3>
+            <p>Para desconectar y reducir estrés corporal, favoreciendo el bienestar general.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true">🦵</div>
+            <h3>Recuperación funcional</h3>
+            <p>Trabajo orientado a recuperar movilidad y sensación de control, con progresión.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true">🩹</div>
+            <h3>Prevención de lesiones</h3>
+            <p>Sesiones enfocadas a detectar puntos de tensión y ayudar a prevenir futuras molestias.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true">❓</div>
+            <h3>Consulta personalizada</h3>
+            <p>Si tienes un caso concreto, lo vemos y ajustamos el tipo de sesión a tu objetivo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CÓMO TRABAJAMOS ===== -->
+    <section>
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <h2>Cómo trabajamos</h2>
+            <p class="section-sub">Un proceso simple, claro y centrado en tu mejora progresiva.</p>
+          </div>
+        </div>
+
+        <div class="grid steps">
+          <div class="step reveal">
+            <div class="num">1</div>
+            <h3>Valoración</h3>
+            <p>Escuchamos tu caso: hábitos, actividad, molestias, objetivos y antecedentes.</p>
+          </div>
+          <div class="step reveal">
+            <div class="num">2</div>
+            <h3>Tratamiento</h3>
+            <p>Aplicamos la técnica adecuada (deportivo, descontracturante, relajante) y ajustamos intensidad.</p>
+          </div>
+          <div class="step reveal">
+            <div class="num">3</div>
+            <h3>Mantenimiento</h3>
+            <p>Te propongo pautas simples para sostener mejoras: movilidad, descanso y prevención.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRECIOS ===== -->
+    <section id="precios">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <h2>Precios</h2>
+            <p class="section-sub">Transparente y sencillo. Si necesitas algo específico, consulta por WhatsApp.</p>
+          </div>
+          <a class="btn primary reveal" id="whatsAppPrices" href="#">Reservar por WhatsApp</a>
+        </div>
+
+        <div class="pricing reveal" role="region" aria-label="Tabla de precios">
+          <table>
+            <thead>
+              <tr>
+                <th>Sesión</th>
+                <th>Duración</th>
+                <th>Precio</th>
+                <th>Incluye</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Sesión personalizada</strong></td>
+                <td>30–40 min</td>
+                <td><strong>25€</strong></td>
+                <td>Adaptación a tu objetivo (deportivo / descontracturante / relajante) + recomendaciones básicas</td>
+              </tr>
+              <tr>
+                <td><strong>Sesiones específicas</strong></td>
+                <td>A consultar</td>
+                <td>Consultar</td>
+                <td>Si buscas más tiempo, tratamiento concreto o planificación, lo vemos y te indico opciones</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="note">
+            <span class="tag">Nota</span>
+            <div style="margin-top:10px;">
+              Los precios pueden ajustarse según valoración y necesidades específicas. Trabajo enfocado en ayudar a reducir tensión y mejorar movilidad/recovery, sin prometer resultados médicos absolutos.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE MÍ ===== -->
+    <section id="sobre-mi">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <h2>Sobre mí</h2>
+            <p class="section-sub">Cercanía, confidencialidad y respeto en cada sesión.</p>
+          </div>
+        </div>
+
+        <div class="two">
+          <div class="panel reveal">
+            <div class="avatar" aria-hidden="true">
+              <img src="assets/logo.jpg" alt="Logo de Masaje y Bienestar" loading="lazy" />
+            </div>
+            <h3 style="margin:0 0 8px;">Ramón Broch · Masajista Deportivo</h3>
+            <p style="margin:0; color:var(--muted);">
+              Masajista deportivo y recuperador funcional especializado en la prevención y tratamiento de molestias musculares y articulares.
+              Ofrezco un servicio profesional y personalizado tanto a deportistas como a personas que buscan aliviar tensiones del día a día,
+              mejorar su bienestar físico y optimizar su recuperación.
+            </p>
+          </div>
+
+          <div class="panel reveal">
+            <h3 style="margin:0 0 8px;">Mi enfoque</h3>
+            <p style="margin:0; color:var(--muted);">
+              Mediante técnicas de masaje deportivo, descontracturante y relajante, adapto cada sesión a tus necesidades específicas.
+              Presto especial atención a tu historia corporal, el tipo de actividad que realizas y el objetivo del tratamiento.
+            </p>
+            <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
+              <span class="tag">Personalizado</span>
+              <span class="tag">Progresivo</span>
+              <span class="tag">Movilidad</span>
+              <span class="tag">Prevención</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== OPINIONES ===== -->
+    <section id="opiniones">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <h2>Opiniones</h2>
+            <p class="section-sub">Reseñas (ejemplo). Si tienes reseñas reales, las sustituyo tal cual.</p>
+          </div>
+        </div>
+
+        <div class="grid reviews">
+          <article class="review reveal">
+            <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <p>“Llegué con la espalda cargadísima por el trabajo y salí mucho más suelto. Trato cercano y muy profesional.”</p>
+            <div class="who">— Marta G. (Castellón)</div>
+          </article>
+          <article class="review reveal">
+            <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <p>“Después de entrenar piernas estaba reventado. La descarga me ayudó a recuperar mejor para el siguiente entreno.”</p>
+            <div class="who">— Iván S. (deportista)</div>
+          </article>
+          <article class="review reveal">
+            <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <p>“Me explicó lo que veía y adaptó la sesión. Se nota que escucha y ajusta la intensidad según lo que necesitas.”</p>
+            <div class="who">— Laura P.</div>
+          </article>
+          <article class="review reveal">
+            <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <p>“Fui por molestias en el hombro y salí con más movilidad. Repetiré como mantenimiento.”</p>
+            <div class="who">— Sergio R.</div>
+          </article>
+          <article class="review reveal">
+            <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <p>“El masaje relajante me vino genial. Ambiente tranquilo y muy respetuoso. Lo recomiendo.”</p>
+            <div class="who">— Nuria V.</div>
+          </article>
+          <article class="review reveal">
+            <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <p>“Rápido para responder por WhatsApp y fácil para reservar. Muy buena experiencia.”</p>
+            <div class="who">— Dani T.</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GALERÍA ===== -->
+    <section id="galeria">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <h2>Fotos del centro</h2>
+            <p class="section-sub">Sala de espera y sala de masaje. Pulsa para ampliar.</p>
+          </div>
+        </div>
+
+        <div class="grid gallery">
+          <article class="photo reveal" data-full="assets/sala-espera.jpg" data-title="Sala de espera">
+            <div class="img-wrap">
+              <img src="assets/sala-espera.jpg" alt="Sala de espera de Masaje y Bienestar" loading="lazy">
+            </div>
+            <div class="cap"><strong>Sala de espera</strong> · ambiente sencillo, tranquilo y cómodo.</div>
+          </article>
+
+          <article class="photo reveal" data-full="assets/sala-masaje.jpg" data-title="Sala de masaje">
+            <div class="img-wrap">
+              <img src="assets/sala-masaje.jpg" alt="Sala de masaje de Masaje y Bienestar" loading="lazy">
+            </div>
+            <div class="cap"><strong>Sala de masaje</strong> · preparada para sesiones deportivas y de relajación.</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== UBICACIÓN ===== -->
+    <section id="ubicacion">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <h2>Ubicación y horario</h2>
+            <p class="section-sub">Calle Doctor Roux 6, Entresuelo · Castellón de la Plana</p>
+          </div>
+          <a class="btn ghost reveal" id="mapsBtn" href="#" target="_blank" rel="noopener">Abrir en Google Maps</a>
+        </div>
+
+        <div class="two">
+          <div class="panel reveal">
+            <h3 style="margin:0 0 10px;">Dirección</h3>
+            <p style="margin:0; color:var(--muted);">
+              Calle Doctor Roux 6, Entresuelo<br/>
+              Castellón de la Plana
+            </p>
+
+            <div style="margin-top:14px;">
+              <h3 style="margin:0 0 10px;">Horario</h3>
+              <div style="display:grid; gap:8px; color:var(--muted); font-size: 14.5px;">
+                <div><strong>Lunes:</strong> 9:30–14:00</div>
+                <div><strong>Martes:</strong> 9:30–19:00</div>
+                <div><strong>Miércoles:</strong> 9:30–15:00</div>
+                <div><strong>Jueves:</strong> 9:30–16:00</div>
+                <div><strong>Viernes:</strong> 9:30–18:00</div>
+                <div><strong>Sábado:</strong> Cerrado</div>
+                <div><strong>Domingo:</strong> Cerrado</div>
+              </div>
+              <p class="help" style="margin-top:10px;">Si necesitas un hueco concreto, escríbeme y lo intentamos ajustar.</p>
+            </div>
+          </div>
+
+          <div class="panel reveal" aria-label="Mapa">
+            <div style="border-radius:16px; overflow:hidden; border:1px solid var(--line);">
+              <iframe
+                title="Mapa: Calle Doctor Roux 6, Castellón"
+                width="100%"
+                height="320"
+                style="border:0"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src=""
+                id="mapsIframe"
+              ></iframe>
+            </div>
+            <p class="help" style="margin-top:10px;">
+              Si el mapa no carga, usa el botón “Abrir en Google Maps”.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section id="contacto">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <h2>Contacto y reservas</h2>
+            <p class="section-sub">La forma más rápida es WhatsApp. También puedes escribir por email.</p>
+          </div>
+        </div>
+
+        <div class="two">
+          <div class="panel reveal">
+            <h3 style="margin:0 0 10px;">Datos</h3>
+            <div style="display:grid; gap: 10px; color: var(--muted); font-size: 14.5px;">
+              <div><strong>WhatsApp / Teléfono:</strong> <a id="telLink" href="#" style="text-decoration:none; font-weight:800;">+34 617 259 689</a></div>
+              <div><strong>Email:</strong> <a id="mailLink" href="#" style="text-decoration:none; font-weight:800;">rbrochmasajista@hotmail.com</a></div>
+              <div><strong>Dirección:</strong> Calle Doctor Roux 6, Entresuelo</div>
+            </div>
+
+            <div style="margin-top: 14px; display:flex; gap: 10px; flex-wrap: wrap;">
+              <a class="btn primary" id="whatsAppContact" href="#">Escribir por WhatsApp</a>
+              <a class="btn" id="callBtn" href="#">Llamar</a>
+            </div>
+
+            <p class="micro">⏱️ Respuesta rápida en horario laboral.</p>
+          </div>
+
+          <div class="panel reveal">
+            <h3 style="margin:0 0 6px;">Formulario</h3>
+            <p class="help">Sin backend: al enviar, se preparará un mensaje para WhatsApp.</p>
+
+            <div class="alert" id="formOk" role="status" aria-live="polite">
+              ✅ Mensaje preparado. Si no se abre WhatsApp, copia el texto y envíamelo manualmente.
+            </div>
+
+            <form id="contactForm" novalidate>
+              <div class="form-row">
+                <div>
+                  <label for="name">Nombre</label>
+                  <input id="name" name="name" type="text" autocomplete="name" required placeholder="Tu nombre" />
+                  <div class="errtxt" id="errName">Introduce tu nombre.</div>
+                </div>
+
+                <div>
+                  <label for="phone">Teléfono</label>
+                  <input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="+34 6XX XXX XXX" />
+                  <div class="errtxt" id="errPhone">Introduce un teléfono válido.</div>
+                </div>
+              </div>
+
+              <div>
+                <label for="service">Tipo de sesión</label>
+                <select id="service" name="service">
+                  <option value="Masaje deportivo">Masaje deportivo</option>
+                  <option value="Descontracturante">Descontracturante</option>
+                  <option value="Relajante">Relajante</option>
+                  <option value="Recuperación funcional">Recuperación funcional</option>
+                  <option value="Prevención / mantenimiento">Prevención / mantenimiento</option>
+                  <option value="Consulta personalizada">Consulta personalizada</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="msg">Mensaje</label>
+                <textarea id="msg" name="msg" required placeholder="Cuéntame brevemente qué necesitas y disponibilidad aproximada."></textarea>
+                <div class="errtxt" id="errMsg">Escribe un mensaje (mínimo 10 caracteres).</div>
+              </div>
+
+              <button class="btn primary" type="submit">Enviar</button>
+              <div class="help" id="preparedTextWrap" style="display:none;">
+                <strong>Texto preparado:</strong>
+                <div id="preparedText" style="margin-top:8px; padding:12px; border:1px solid var(--line); border-radius:14px; background:#fff; color:var(--muted);"></div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <div style="margin-top: 22px;">
+          <div class="section-head reveal">
+            <div>
+              <h2>Preguntas frecuentes</h2>
+              <p class="section-sub">Respuestas claras para venir con tranquilidad.</p>
+            </div>
+          </div>
+
+          <div class="grid" style="gap:12px;">
+            <details class="reveal">
+              <summary>¿Duele el masaje?</summary>
+              <p>Depende de la zona y del objetivo. Se ajusta la intensidad para que sea tolerable y útil, siempre con comunicación durante la sesión.</p>
+            </details>
+            <details class="reveal">
+              <summary>¿Cuánto dura la sesión?</summary>
+              <p>La sesión estándar es de 30–40 minutos. Si necesitas un formato diferente, lo hablamos.</p>
+            </details>
+            <details class="reveal">
+              <summary>¿Cuándo notaré mejoría?</summary>
+              <p>Cada cuerpo responde distinto. Muchas personas notan alivio y más movilidad tras la sesión, y en otros casos se requiere continuidad y mantenimiento.</p>
+            </details>
+            <details class="reveal">
+              <summary>¿Qué ropa llevo?</summary>
+              <p>Ropa cómoda. En función de la zona a tratar, te indicaré lo necesario para trabajar con comodidad y respeto.</p>
+            </details>
+            <details class="reveal">
+              <summary>¿Trabajas con lesiones?</summary>
+              <p>Se trabaja de forma responsable para ayudar a reducir molestias y mejorar movilidad, ajustando la sesión a tu situación. Si hay señales de alarma, se recomienda valoración sanitaria.</p>
+            </details>
+            <details class="reveal">
+              <summary>¿Cancelaciones?</summary>
+              <p>Si puedes, avisa con antelación para poder reorganizar la agenda y ofrecer ese hueco a otra persona.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="foot">
+        <div>
+          <div style="font-weight:850;">Masaje y Bienestar · Ramón Broch</div>
+          <small>Castellón de la Plana · Calle Doctor Roux 6, Entresuelo</small>
+        </div>
+        <div style="display:flex; gap:12px; flex-wrap:wrap;">
+          <small><a href="#" id="privacyLink">Aviso legal / Privacidad (placeholder)</a></small>
+          <small><a href="#" id="igLink">Instagram (placeholder)</a></small>
+        </div>
+      </div>
+      <div style="margin-top: 14px;">
+        <small>© <span id="year"></span> Masaje y Bienestar. Todos los derechos reservados.</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a class="wa-fab" id="waFab" href="#" aria-label="Abrir WhatsApp para reservar">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M20.52 3.48A11.86 11.86 0 0 0 12.03 0C5.4 0 .04 5.36.04 12c0 2.11.55 4.18 1.6 6.02L0 24l6.16-1.62a11.95 11.95 0 0 0 5.87 1.5h.01c6.63 0 12-5.36 12-12a11.9 11.9 0 0 0-3.52-8.4ZM12.04 21.85h-.01a9.94 9.94 0 0 1-5.07-1.39l-.36-.22-3.65.96.98-3.55-.24-.37a9.93 9.93 0 0 1-1.53-5.29c0-5.5 4.48-9.97 9.99-9.97a9.9 9.9 0 0 1 7.07 2.93 9.91 9.91 0 0 1 2.92 7.05c0 5.5-4.48 9.85-9.1 9.85Zm5.75-7.46c-.31-.16-1.83-.9-2.11-1-.28-.1-.49-.16-.7.16-.2.31-.8 1-.98 1.21-.18.2-.35.23-.66.08-.31-.16-1.29-.48-2.46-1.53-.91-.81-1.52-1.82-1.7-2.12-.18-.31-.02-.47.13-.62.14-.14.31-.35.47-.53.16-.18.2-.31.31-.51.1-.2.05-.39-.02-.55-.08-.16-.7-1.68-.96-2.3-.25-.6-.5-.52-.7-.53h-.6c-.2 0-.55.08-.84.39-.29.31-1.1 1.08-1.1 2.62 0 1.54 1.13 3.03 1.29 3.24.16.2 2.22 3.39 5.38 4.76.75.32 1.33.52 1.78.66.75.24 1.43.2 1.97.12.6-.09 1.83-.75 2.09-1.48.26-.73.26-1.36.18-1.48-.08-.12-.28-.2-.6-.35Z"/>
+    </svg>
+  </a>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="inner" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+      <img id="lightboxImg" src="" alt="">
+      <div class="bar">
+        <div id="lightboxTitle" style="font-weight:800;"></div>
+        <button class="xbtn" id="lightboxClose" type="button" aria-label="Cerrar">Cerrar ✕</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    /**
+     * ====== ZONA EDITABLE RÁPIDA ======
+     */
+    const BUSINESS = {
+      name: "Masaje y Bienestar, Ramón Broch",
+      person: "Ramón Broch",
+      role: "Masajista Deportivo",
+      phoneE164: "34617259689",     // SIN +, sin espacios
+      phonePretty: "+34 617 259 689",
+      email: "rbrochmasajista@hotmail.com",
+      address: "Calle Doctor Roux 6, Entresuelo, Castellón de la Plana",
+      mapsQuery: "Calle Doctor Roux 6, Castellón de la Plana",
+      whatsappDefaultText: "Hola Ramón, me gustaría reservar una sesión (30–40 min) por 25€. ¿Tienes disponibilidad?"
+    };
+
+    // Helpers
+    const $ = (sel) => document.querySelector(sel);
+    const enc = encodeURIComponent;
+
+    // Year
+    $("#year").textContent = new Date().getFullYear();
+
+    // Links
+    const waBase = `https://wa.me/${BUSINESS.phoneE164}?text=`;
+    const telHref = `tel:${BUSINESS.phonePretty.replace(/\s+/g,'')}`;
+    const mailHref = `mailto:${BUSINESS.email}`;
+
+    function setWhatsAppLink(el, text){
+      if (!el) return;
+      el.href = waBase + enc(text || BUSINESS.whatsappDefaultText);
+      el.target = "_blank";
+      el.rel = "noopener";
+    }
+
+    setWhatsAppLink($("#whatsAppTop"));
+    setWhatsAppLink($("#whatsAppHero"));
+    setWhatsAppLink($("#whatsAppMobile"));
+    setWhatsAppLink($("#whatsAppPrices"), "Hola Ramón, quiero reservar una sesión (30–40 min) por 25€. ¿Qué huecos tienes disponibles?");
+    setWhatsAppLink($("#whatsAppContact"));
+
+    // Quick booking buttons
+    document.querySelectorAll("[data-wa]").forEach(btn => {
+      btn.setAttribute("href", waBase + enc(btn.getAttribute("data-wa")));
+      btn.setAttribute("target","_blank");
+      btn.setAttribute("rel","noopener");
+    });
+
+    // FAB
+    setWhatsAppLink($("#waFab"));
+
+    // Tel & Email
+    $("#telLink").href = telHref;
+    $("#telLink").textContent = BUSINESS.phonePretty;
+    $("#callBtn").href = telHref;
+
+    $("#mailLink").href = mailHref;
+    $("#mailLink").textContent = BUSINESS.email;
+
+    // Maps
+    const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${enc(BUSINESS.mapsQuery)}`;
+    $("#mapsBtn").href = mapsUrl;
+    $("#mapsIframe").src = `https://www.google.com/maps?q=${enc(BUSINESS.mapsQuery)}&output=embed`;
+
+    // Placeholder links
+    $("#privacyLink").addEventListener("click", (e) => {
+      e.preventDefault();
+      alert("Placeholder: aquí pondremos Aviso legal / Política de privacidad cuando la tengas.");
+    });
+    $("#igLink").addEventListener("click", (e) => {
+      e.preventDefault();
+      alert("Placeholder: añade aquí el enlace real a Instagram cuando lo tengas.");
+    });
+
+    // Mobile menu toggle
+    const menuBtn = $("#menuBtn");
+    const mobileMenu = $("#mobileMenu");
+    let menuOpen = false;
+
+    menuBtn.addEventListener("click", () => {
+      menuOpen = !menuOpen;
+      menuBtn.setAttribute("aria-expanded", String(menuOpen));
+      mobileMenu.style.display = menuOpen ? "block" : "none";
+    });
+
+    // Close mobile menu on click
+    mobileMenu.querySelectorAll("a[href^='#']").forEach(a => {
+      a.addEventListener("click", () => {
+        menuOpen = false;
+        menuBtn.setAttribute("aria-expanded", "false");
+        mobileMenu.style.display = "none";
+      });
+    });
+
+    // Reveal on scroll
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add("in");
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+
+    // Contact form -> validate & open WhatsApp with prepared text
+    const form = $("#contactForm");
+    const ok = $("#formOk");
+
+    function markError(input, errEl, show){
+      input.classList.toggle("error", !!show);
+      errEl.style.display = show ? "block" : "none";
+    }
+
+    function isValidPhone(s){
+      const cleaned = String(s || "").replace(/[^\d+]/g,"");
+      const digits = cleaned.replace(/\D/g,"");
+      return digits.length >= 9;
+    }
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      const name = $("#name");
+      const phone = $("#phone");
+      const service = $("#service");
+      const msg = $("#msg");
+
+      const errName = $("#errName");
+      const errPhone = $("#errPhone");
+      const errMsg = $("#errMsg");
+
+      const vName = name.value.trim();
+      const vPhone = phone.value.trim();
+      const vMsg = msg.value.trim();
+      const vService = service.value;
+
+      let bad = false;
+
+      if (!vName) { markError(name, errName, true); bad = true; } else markError(name, errName, false);
+      if (!isValidPhone(vPhone)) { markError(phone, errPhone, true); bad = true; } else markError(phone, errPhone, false);
+      if (vMsg.length < 10) { markError(msg, errMsg, true); bad = true; } else markError(msg, errMsg, false);
+
+      if (bad) return;
+
+      const prepared =
+`Hola Ramón, soy ${vName}.
+Quiero reservar: ${vService}.
+Mi teléfono: ${vPhone}.
+Mensaje: ${vMsg}`;
+
+      $("#preparedTextWrap").style.display = "block";
+      $("#preparedText").textContent = prepared;
+
+      ok.style.display = "block";
+      setTimeout(() => ok.style.display = "none", 6000);
+
+      window.open(waBase + enc(prepared), "_blank", "noopener");
+    });
+
+    // Lightbox for gallery
+    const lightbox = $("#lightbox");
+    const lbImg = $("#lightboxImg");
+    const lbTitle = $("#lightboxTitle");
+    const lbClose = $("#lightboxClose");
+
+    function openLightbox(src, title, alt){
+      lbImg.src = src;
+      lbImg.alt = alt || title || "Imagen ampliada";
+      lbTitle.textContent = title || "";
+      lightbox.classList.add("in");
+      lightbox.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+    }
+    function closeLightbox(){
+      lightbox.classList.remove("in");
+      lightbox.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+      lbImg.src = "";
+    }
+
+    document.querySelectorAll(".photo").forEach(card => {
+      card.addEventListener("click", () => {
+        const src = card.getAttribute("data-full");
+        const title = card.getAttribute("data-title");
+        const alt = card.querySelector("img")?.alt || title;
+        openLightbox(src, title, alt);
+      });
+      card.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") card.click();
+      });
+      card.setAttribute("tabindex","0");
+      card.setAttribute("role","button");
+      card.setAttribute("aria-label","Abrir imagen: " + (card.getAttribute("data-title") || "foto"));
+    });
+
+    lbClose.addEventListener("click", closeLightbox);
+    lightbox.addEventListener("click", (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+    window.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && lightbox.classList.contains("in")) closeLightbox();
+    });
+  </script>
+</body>
+</html>
